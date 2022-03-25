@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign-Up form</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav id="navbar">
+      <div class="logo-container">
+        <h1><a href="index.html">AJ HOTEL</a></h1>
+      </div>
+      <div class="nav-items-container">
+        <ul id="nav-items">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container-1">
+      <div class="form-wrap">
+        <div class="form-heading">
+          <h1>Sign Up</h1>
+          <p>It's free and only takes a minute</p>
+        </div>
+        <form action="sign-up-form.php" method="GET">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name" />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd" placeholder="Enter your password" />
+          </div>
+          <div class="form-group">
+            <label for="c-pwd">Confirm Password</label>
+            <input type="password" id="c-pwd" name="c-pwd" placeholder="Enter password again" />
+          </div>
+          <button type="submit" class="btn">Sign-Up</button>
+          <div class="term-condition">
+            <p>
+              By clicking the Sign Up button you agree to our
+              <a href="#">Terms & Conditions</a> and
+              <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer">
+        <p>Already have an account? <a href="#"> Login Here</a></p>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
